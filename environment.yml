@@ -1,0 +1,23 @@
+Heroku doesn't care if you're using virtualenv or conda to manage environments. Using one or the other is mostly irrelevant to the deployment process.
+
+Don't bother with the Conda Environment Buildpack instructions since those are for deploying a remote conda environment which is not what you are trying to do. You, my friend, are trying to deploy a remote your_app environment.
+
+Here's how to do that with a dash application and conda:
+Create a new folder for your project:
+$ mkdir dash_app_example
+$ cd dash_app_example
+Initialize the folder with git
+$ git init # initializes an empty git repo
+Create an environment.yml file in dash_app_example:
+name: dash_app #Environment name
+dependencies:
+  - python=3.6
+  - pip:
+    - dash
+    - dash-renderer
+    - dash-core-components
+    - dash-html-components
+    - plotly
+    - pandas
+    - turbo-dash
+    - gunicorn # for app deployment
