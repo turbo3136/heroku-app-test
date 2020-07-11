@@ -14,7 +14,7 @@ itsdangerous==1.1.0
 Jinja2==2.11.2
 MarkupSafe==1.1.1
 numpy==1.18.5
-pandas @ file:///tmp/build/80754af9/pandas_1592841659173/work
+pandas==1.0.5
 plotly==4.8.2
 python-dateutil==2.8.1
 pytz==2020.1
