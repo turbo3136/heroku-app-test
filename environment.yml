@@ -1,4 +1,4 @@
-name: dash_app #Environment name
+name: heroku_covid #Environment name
 dependencies:
   - python=3.8
   - pip:
