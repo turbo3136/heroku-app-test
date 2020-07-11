@@ -11,7 +11,7 @@ $ git init # initializes an empty git repo
 Create an environment.yml file in dash_app_example:
 name: dash_app #Environment name
 dependencies:
-  - python=3.6
+  - python=3.8
   - pip:
     - dash
     - dash-renderer
